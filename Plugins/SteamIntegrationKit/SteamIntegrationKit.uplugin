@@ -1,0 +1,41 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "SteamIntegrationKit",
+	"Description": "Create lobby, host and join customs sessions via steam servers",
+	"Category": "Networking",
+	"CreatedBy": "The Unreal Guy",
+	"CreatedByURL": "https://www.theunrealguy.com/",
+	"DocsURL": "https://docs.google.com/document/d/16BIoRd8RIVo6wDCsgScNpB7GcWOC_lQuDAEdbkNvN8s/edit?usp=sharing",
+	"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/3e0f16ae-f0cc-4771-be22-09bcf3c2388b",
+	"FabURL": "com.epicgames.launcher://ue/Fab/product/3e0f16ae-f0cc-4771-be22-09bcf3c2388b",
+	"SupportURL": "mailto:theunrealguy7870@gmail.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EngineVersion": "5.5",
+	"Modules": [
+		{
+			"Name": "SteamIntegrationKit",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		}
+	]
+}
