@@ -7,7 +7,7 @@
 	"Category": "Networking",
 	"CreatedBy": "The Unreal Guy",
 	"CreatedByURL": "https://www.theunrealguy.com/",
-	"DocsURL": "https://docs.google.com/document/d/16BIoRd8RIVo6wDCsgScNpB7GcWOC_lQuDAEdbkNvN8s/edit?usp=sharing",
+	"DocsURL": "https://docs.google.com/document/d/1Y9eT074bQjOD67Ny1mGBnHr1Y2dED5VQ6V06V260LNk/edit?usp=drive_link",
 	"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/3e0f16ae-f0cc-4771-be22-09bcf3c2388b",
 	"FabURL": "com.epicgames.launcher://ue/Fab/product/3e0f16ae-f0cc-4771-be22-09bcf3c2388b",
 	"SupportURL": "mailto:theunrealguy7870@gmail.com",
@@ -15,7 +15,7 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"EngineVersion": "5.5",
+	"EngineVersion": "5.7",
 	"Modules": [
 		{
 			"Name": "SteamIntegrationKit",
@@ -35,6 +35,10 @@
 		},
 		{
 			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		},
+		{
+			"Name": "SteamSockets",
 			"Enabled": true
 		}
 	]

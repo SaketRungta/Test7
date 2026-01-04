@@ -38,19 +38,19 @@ struct FSikCustomSessionSettings
 	GENERATED_BODY()
 
 	/** Name of the map that user has selected */
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
 	FString MapName = FString("");
 
 	/** Game mode selected by the user */
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
 	FString GameMode = FString("");
 
 	/** Numbers of players session will host */
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
 	FString Players = FString("");
 
 	/** Whether the session is public or private */
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
 	FString Visibility = FString("");
 };
 

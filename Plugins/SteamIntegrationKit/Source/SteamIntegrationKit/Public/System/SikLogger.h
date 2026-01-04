@@ -37,7 +37,7 @@ inline void Internal_Log(const ELogVerbosity::Type Verbosity,
             break;
     }
 
-#if !UE_BUILD_SHIPPING
+#if WITH_EDITOR
     if (GEngine)
     {
         GEngine->AddOnScreenDebugMessage(INDEX_NONE, 8.f, ScreenColor, FinalMessage);

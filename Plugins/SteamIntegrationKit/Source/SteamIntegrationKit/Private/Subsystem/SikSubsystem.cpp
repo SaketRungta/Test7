@@ -134,7 +134,7 @@ void USikSubsystem::FindSessions()
 	LastCreatedSessionSearch->bIsLanQuery = false;
 	LastCreatedSessionSearch->QuerySettings.Set(SETTING_FILTERSEED, SETTING_FILTERSEED_VALUE, EOnlineComparisonOp::Equals);
 	LastCreatedSessionSearch->QuerySettings.Set(SEARCH_LOBBIES, true, EOnlineComparisonOp::Equals);
-
+	
 	if (!GetWorld() || GetWorld()->bIsTearingDown)
 	{
 		LOG_WARNING(TEXT("FindSessions aborted – world is tearing down"));

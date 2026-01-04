@@ -3,24 +3,13 @@
 #include "Widgets/SikHudWidget.h"
 
 #include "OnlineSessionSettings.h"
+#include "OnlineSubsystem.h"
 #include "Widgets/SikSessionDataWidget.h"
 #include "Engine/GameInstance.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
 #include "Online/OnlineSessionNames.h"
 #include "System/SikLogger.h"
-#include "UObject/ConstructorHelpers.h"
-
-USikHudWidget::USikHudWidget(const FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
-{
-	static ConstructorHelpers::FClassFinder<UUserWidget> Asset(TEXT
-		("/Game/SteamIntegrationKit/Blueprints/Widgets/WBP_SessionData_Sik"));
-	if (Asset.Succeeded())
-	{
-		SessionDataWidgetClass = Asset.Class;
-	}
-}
 
 bool USikHudWidget::Initialize()
 {
@@ -305,7 +294,7 @@ void USikHudWidget::UpdateSessionsList(const TArray<FOnlineSessionSearchResult>&
 		// --- ADD NEW WIDGET ---
 		if (!SessionDataWidgetClass)
 		{
-			LOG_ERROR(TEXT("SessionDataWidgetClass is NULL!"));
+			LOG_ERROR(TEXT("Please set the SessionDataWidgetClass in WBP_HudWidget_Sik!"));
 			return;
 		}
 

@@ -78,7 +78,7 @@ private:
 	void OnLobbyPlayersChangedGlobal(const uint32 CurrentPlayers);
 
 	/** Callback when host clicks the starts button */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Bindings")
 	void OnStartGameClicked();
 
 	/** Callback when start session is completed */
@@ -91,7 +91,7 @@ private:
     
 private:
 	/** Path to gameplay map (e.g. "/Game/Maps/Map_Gameplay") */
-	UPROPERTY(EditDefaultsOnly, Category = "Multiplayer Sessions Subsystem")
+	UPROPERTY(EditDefaultsOnly, Category = "Defaults")
 	TMap<FString, FString> MapPaths;
 
 	/** Cached subsystem pointer */
