@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Logging/LogMacros.h"
 #include "Logging/LogVerbosity.h"
+#include "Engine/Engine.h"
 
 /** Defined in UMssSubsystem.cpp */
 DECLARE_LOG_CATEGORY_EXTERN(SteamIntegrationKitLog, Log, All);
@@ -37,7 +38,7 @@ inline void Internal_Log(const ELogVerbosity::Type Verbosity,
             break;
     }
 
-#if WITH_EDITOR
+#if !UE_BUILD_SHIPPING
     if (GEngine)
     {
         GEngine->AddOnScreenDebugMessage(INDEX_NONE, 8.f, ScreenColor, FinalMessage);

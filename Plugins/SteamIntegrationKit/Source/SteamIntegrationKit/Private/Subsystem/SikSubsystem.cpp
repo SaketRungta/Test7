@@ -8,6 +8,8 @@
 #include "Engine/World.h"
 #include "Engine/LocalPlayer.h"
 #include "System/SikLogger.h"
+#include "Engine/Engine.h"
+#include "Misc/CoreDelegates.h"
 
 DEFINE_LOG_CATEGORY(SteamIntegrationKitLog);
 
